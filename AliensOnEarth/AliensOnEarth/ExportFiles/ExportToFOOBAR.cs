@@ -10,9 +10,9 @@ namespace AliensOnEarth.ExportFiles
      Company:Multunus Software
      This Class is used to add your Formats
      */
-    class ExportToFOOBAR
+    class ExportToFOOBAR : IGenerateFormat
     {
-        public static void GenerateFile(Hashtable alienInfo)
+        public void GenerateFile(Hashtable alienInfo)
         {
             //Your Implementation Goes Here
            

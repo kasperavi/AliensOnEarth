@@ -10,3 +10,4 @@ C:\Users\Kasper\Desktop\AliensOnEarth\AliensOnEarth\AliensOnEarth\bin\Debug\itex
 C:\Users\Kasper\Desktop\AliensOnEarth\AliensOnEarth\AliensOnEarth\bin\Debug\itextsharp.xml
 C:\Users\Kasper\Desktop\AliensOnEarth\AliensOnEarth\AliensOnEarth\obj\Debug\AliensOnEarth.exe
 C:\Users\Kasper\Desktop\AliensOnEarth\AliensOnEarth\AliensOnEarth\obj\Debug\AliensOnEarth.pdb
+C:\Users\Kasper\Desktop\AliensOnEarth\AliensOnEarth\AliensOnEarth\obj\Debug\AliensOnEarth.csprojResolveAssemblyReference.cache

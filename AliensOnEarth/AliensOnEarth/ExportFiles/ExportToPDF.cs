@@ -16,9 +16,9 @@ namespace AliensOnEarth.ExportFiles
      Company:Multunus Software
      This Class is used to Write the Alien Records to a PDF file
      */
-    class ExportToPDF
+    class ExportToPDF : IGenerateFormat
     {
-        public static void GenerateFile(Hashtable alienInfo)
+        public void GenerateFile(Hashtable alienInfo)
         {
             Console.WriteLine("Exporting To PDF");
 

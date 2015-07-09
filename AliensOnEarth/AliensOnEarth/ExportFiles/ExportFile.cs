@@ -22,9 +22,12 @@ namespace AliensOnEarth.ExportFiles
             {
                 //Dynamically getting the Class name of the Format
                 Type calledType = Type.GetType("AliensOnEarth.ExportFiles.ExportTo" + alienDetails.getDataFormat());
-                MethodInfo mi = calledType.GetMethod("GenerateFile");
-
-                calledType.InvokeMember(mi.Name, BindingFlags.InvokeMethod | BindingFlags.Public | BindingFlags.Static, null, null, new Object[] { FormatAlienRecord.FormatAlienData(alienDetails) });
+               // Creating an instance of the Class
+                object instance = Activator.CreateInstance(calledType);
+                MethodInfo method = calledType.GetMethod("GenerateFile");
+                //passing method arguments with object
+                method.Invoke(instance, new object[] { FormatAlienRecord.FormatAlienData(alienDetails) });
+               // calledType.InvokeMember(mi.Name, BindingFlags.InvokeMethod | BindingFlags.Public | BindingFlags.Static, null, null, new Object[] { FormatAlienRecord.FormatAlienData(alienDetails) });
 
 
             }

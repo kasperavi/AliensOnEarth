@@ -54,6 +54,7 @@
     <Compile Include="ExportFiles\ExportToPDF.cs" />
     <Compile Include="ExportFiles\ExportToTXT.cs" />
     <Compile Include="ExportFiles\FileNamePaths.cs" />
+    <Compile Include="ExportFiles\IGenerateFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AlienDetails\ReadAlienDetails.cs" />
   </ItemGroup>

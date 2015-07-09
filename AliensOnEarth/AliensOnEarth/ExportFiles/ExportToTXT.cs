@@ -13,10 +13,10 @@ namespace AliensOnEarth.ExportFiles
     Company:Multunus Software
     This Class is used to Write the Alien Records to a TXT file
     */
-    class ExportToTXT 
+    class ExportToTXT : IGenerateFormat
     {
 
-        public static void GenerateFile(Hashtable alienInfo)
+        public void GenerateFile(Hashtable alienInfo)
         {
             Console.WriteLine("Exporting To TXT");
             StreamWriter objWriter;
