@@ -19,12 +19,14 @@ namespace AliensOnEarth
         {
             Console.WriteLine("Alien Records Registry Tool \n");
             AlienInformation alienDetails = new AlienInformation();
+               //Taking input from the User
             ReadAlienDetails.ReadAlienInput(alienDetails);
+               //Formatting the input using hashtable key value pairs
             FormatAlienRecord.FormatAlienData(alienDetails);
+               //Displaying the Details to the User on Screen
             AlienRecordsDisplay.AlienDataDisplay(FormatAlienRecord.FormatAlienData(alienDetails));
             Console.ReadLine();
-         // ExportToPDF.GenerateFile(FormatAlienRecord.FormatAlienData(alienDetails));
-          //  ExportToTXT.GenerateFile(FormatAlienRecord.FormatAlienData(alienDetails));
+               //Exporting the Alien records to the user specified format (uses Reflection)
             ExportFile.CheckFormat(alienDetails);
             Console.ReadLine();
         

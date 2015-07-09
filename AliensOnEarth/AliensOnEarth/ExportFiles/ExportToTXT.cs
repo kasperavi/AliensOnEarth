@@ -22,15 +22,17 @@ namespace AliensOnEarth.ExportFiles
             StreamWriter objWriter;
             try
             {
-
+                //creating Streamwriter to write .txt file with Filename and path
                 objWriter = new StreamWriter(FileNamePaths.filePath + FileNamePaths.fileName + ".txt");
                  objWriter.WriteLine("Alien Record Details");
                  objWriter.WriteLine("----------------------");
+                //Writing the Contents of the Hastable to the .txt file
                  foreach (DictionaryEntry records in alienInfo)
                  {
                      objWriter.WriteLine(records.Key + " " + records.Value);
                  }
                  Console.WriteLine("Exporting To TXT Completed!");   
+                //Closing the Streamwriter
                  objWriter.Close();
             }
             catch(Exception ex)

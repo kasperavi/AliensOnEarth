@@ -18,6 +18,7 @@ namespace AliensOnEarth
         {
             
             Console.WriteLine();
+            // Traversing and printing the contents of the Hastable that contains Alien Details
             foreach (DictionaryEntry records in alienInfo)
             {
                 Console.WriteLine(records.Key + " " + records.Value);
